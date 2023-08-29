@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    "from to"
+    "fromInput toInput"
+    "fromConvert toConvert"
+    "convertRate convertRate"
+    "sponge sponge";
+  margin: 10% 10%;
+  padding: 0 10%;
+  gap: 10px;
+}
+
+.from-title {
+  grid-area: from;
+}
+.to-title {
+  grid-area: to;
+}
+.from-input {
+  grid-area: fromInput;
+}
+.to-input {
+  grid-area: toInput;
+}
+.conversion-rate {
+  grid-area: convertRate;
+  text-align: center;
+}

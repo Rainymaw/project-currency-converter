@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <h1 class="from-title">From</h1>
+      <input type="text" class="from-input" id="from-input" />
+      <select class="from-currency">
+        <option value="---">
+          -------------------------------------------------------
+        </option>
+        <option value="dzd">DZ Dinars</option>
+        <option value="usd">US Dollars</option>
+        <option value="eur">EUros</option>
+      </select>
+
+      <h1 class="to-title">To</h1>
+      <input type="text" class="to-input" id="to-input" />
+      <select class="to-currency">
+        <option value="---">
+          -------------------------------------------------------
+        </option>
+        <option value="dzd">DZ Dinars</option>
+        <option value="usd">US Dollars</option>
+        <option value="eur">EUros</option>
+      </select>
+      <h1 class="conversion-rate hide"></h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
